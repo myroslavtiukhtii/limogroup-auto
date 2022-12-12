@@ -1,11 +1,11 @@
-## :pushpin: Sneakers site
+## :pushpin: Car site
 #### :memo: Description: 
 
-Home page of Product company website.
+Home page of Services company website.
 ___
 
 #### :link: Live Demo: 
-[SITE](https://myroslavtiukhtii.github.io/Sneakers-site/dist/)
+[SITE](https://myroslavtiukhtii.github.io/limogroup-auto/dist/)
 
 [Design](The Free Library)
 ___
