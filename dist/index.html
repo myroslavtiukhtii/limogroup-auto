@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Limogroup</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -178,13 +179,14 @@
                     <li class="slider-list__item">
                         <div class="titles">
                             <h2>Mersedes Benz V Class</h2>
-                            <h3>190$ / per hour</h3>
+                            <h3>190$ / <span>per hour</span></h3>
                         </div>
                         <div class="about-car">
                             <span>Passengers: 6</span>
                             <span>Transmission: automatic</span>
                         </div>
-                        <button>Get Limousine</button>
+                        <img src="./img/feets-img-1-mersedes-v-class.png" alt="Mersedes V-class black">
+                        <button class="button">Get Limousine</button>
                     </li>
                     <li class="slider-list__item">
                         <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes Benz V-Class">
@@ -203,20 +205,20 @@
         </section>
         <section class="clients">
             <div class="container">
-                <img src="./img/clients-logo-cartier-logo.png" alt="Cartier logo company">
-                <img src="./img/clients-logo-chopard.png" alt="Chopard logo company">
-                <img src="./img/clients-logo-emirates.png" alt="Emirates logo company">
-                <img src="./img/clients-logo-genève-aéroport.png" alt="Genève aéroport logo company">
-                <img src="./img/clients-logo-iwc.png" alt="Iwc logo company">
+                <div class="client-list">
+                    <img src="./img/clients-logo-cartier-logo.png" alt="Cartier logo company">
+                    <img src="./img/clients-logo-chopard.png" alt="Chopard logo company">
+                    <img src="./img/clients-logo-emirates.png" alt="Emirates logo company">
+                    <img src="./img/clients-logo-genève-aéroport.png" alt="Genève aéroport logo company">
+                    <img src="./img/clients-logo-iwc.png" alt="Iwc logo company">
+                </div>
             </div>
         </section>
         <section class="advantages">
             <div class="container">
                 <ul class="advantages-list">
                     <li class="advantages-list__item">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#advantages-icon-1"></use>
-                        </svg>
+                        <img src="./img/advantages-icon-1.svg" alt="">
                         <div class="text">
                             <h3>Online Reservation</h3>
                             <p>No need to leave the house and go somewhere.
@@ -226,9 +228,7 @@
                         </div>
                     </li>
                     <li class="advantages-list__item">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#advantages-icon-2"></use>
-                        </svg>
+                        <img src="./img/advantages-icon-2.svg" alt="">
                         <div class="text">
                             <h3>Professional Drivers</h3>
                             <p>Limogroup chauffeurs are among
@@ -238,9 +238,7 @@
                         </div>
                     </li>
                     <li class="advantages-list__item">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#advantages-icon-3"></use>
-                        </svg>
+                        <img src="./img/advantages-icon-3.svg" alt="">
                         <div class="text">
                             <h3>Prestige Vehicles</h3>
                             <p>All our cars radiate maximum comfort and safety,
@@ -250,9 +248,7 @@
                         </div>
                     </li>
                     <li class="advantages-list__item">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#advantages-icon-4"></use>
-                        </svg>
+                        <img src="./img/advantages-icon-4.svg" alt="">
                         <div class="text">
                             <h3>Online Payment</h3>
                             <p>For the convenience of our customers,
@@ -264,7 +260,7 @@
                 </ul>
             </div>
         </section>
-        <section class="contact">
+        <!-- <section class="contact">
             <div class="container">
                 <h2>Contact us</h2>
                 <p>Perhaps you have any questions? Please write to us</p>
@@ -283,9 +279,9 @@
                     <img src="./img/contact-img.png" alt="The man near a car">
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer>
+    <!-- <footer>
         <div class="container">
             <div class="head">
                 <div class="subscribe ">
@@ -349,7 +345,7 @@
         <div class="bottom">
             <p>Copyright © 2022 The Limousine. All Rights Reserved.</p>
         </div>
-    </footer>
+    </footer> -->
     <script src="./js/script.min.js"></script>
 </body>
 </html>
