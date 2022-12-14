@@ -60,12 +60,14 @@
                     </li>
                     <li class="dotted"></li>
                     <li class="list__item">
-                        <p class="active">2</p>
+                        <p>
+                            <img src="./img/icon-check.svg" alt="Icon check">
+                        </p>
                         <h3>Choose a Vehicle</h3>
                     </li>
                     <li class="dotted"></li>
                     <li class="list__item">
-                        <p>3</p>
+                        <p class="active">3</p>
                         <h3>Enter Contact Details</h3>
                     </li>
                     <li class="dotted"></li>
@@ -109,8 +111,19 @@
                             <h3>Total time</h3>
                             <p>7 h 0 m</p>
                         </div>
+                        <div class="line"></div>
+                    </li>
+                    <li class="summary-list__item">
+                        <div>
+                            <h3>Vehicle</h3>
+                            <p>Mersedes Benz V - Class</p>
+                        </div>
                     </li>
                 </ul>
+                <div class="carprice">
+                    <h3>Selected Vehicle</h3>
+                    <p>$450.00</p>
+                </div>
                 <div class="line"></div>
                 <div class="totalprice">
                     <h3>Total</h3>
@@ -118,115 +131,43 @@
                 </div>
             </div>
         </section>
+        <section class="form-details">
+            <div class="container">
+                <h2>CONTACT DETAILS</h2>
+                <form>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="email" placeholder="E-mail address">
+                    <input type="number" placeholder="Phone number">
+                    <textarea name="" id="" cols="20" rows="10" placeholder="Comments ..."></textarea>
+                </form>
+                <div class="pays">
+                    <h3>Choose payment method</h3>
+                    <div class="methods">
+                        <div>
+                            <img src="./img/paypal-logo.png" alt="Paypal logo">
+                        </div>
+                        <div>
+                            <img src="./img/stripe-logo.png" alt="Stripe logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="cars">
             <div class="container">
-                <ul class="cars-list">
-                    <li class="cars-list__item">
-                        <div class="imgbg">
-                            <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes v-class">
-                        </div>
-                        <div class="about">
-                            <h2>Mercedes Benz V-Class</h2>
-                            <p>$445.00</p>
-                            <div class="info-items">
-                                <div class="persons">
-                                    <h4>7</h4>
-                                    <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
-                                </div>
-                                <div class="bags">
-                                    <h4>7</h4>
-                                    <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
-                                </div>
-                            </div>
-                            <a href="#" class="info">
-                                <div class="circle">
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#info-icon"></use>
-                                    </svg>
-                                </div>
-                                <span>More Info</span>
-                            </a>
-                        </div>
-                        <div class="select">
-                            <button class="button">Select</button>
-                        </div>
-                    </li>
-                    <hr class="line">
-                    <li class="cars-list__item">
-                        <div class="imgbg">
-                            <img src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes S-class">
-                        </div>
-                        <div class="about">
-                            <h2> Mercedes Benz S-Class </h2>
-                            <p>$480.00</p>
-                            <div class="info-items">
-                                <div class="persons">
-                                    <h4>2</h4>
-                                    <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
-                                </div>
-                                <div class="bags">
-                                    <h4>2</h4>
-                                    <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
-                                </div>
-                            </div>
-                            <a href="#" class="info">
-                                <div class="circle">
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#info-icon"></use>
-                                    </svg>
-                                </div>
-                                <span>More Info</span>
-                            </a>
-                        </div>
-                        <div class="select">
-                            <button class="button">Select</button>
-                        </div>
-                    </li>
-                    <hr class="line">
-                    <li class="cars-list__item">
-                        <div class="imgbg">
-                            <img src="./img/feets-img-3-bmw-m5.png" alt="BMW M5 f90 Competition">
-                        </div>
-                        <div class="about">
-                            <h2>BMW M5 f90 Competition</h2>
-                            <p>$390.00</p>
-                            <div class="info-items">
-                                <div class="persons">
-                                    <h4>2</h4>
-                                    <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
-                                </div>
-                                <div class="bags">
-                                    <h4>2</h4>
-                                    <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
-                                </div>
-                            </div>
-                            <a href="#" class="info">
-                                <div class="circle">
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#info-icon"></use>
-                                    </svg>
-                                </div>
-                                <span>More Info</span>
-                            </a>
-                        </div>
-                        <div class="select">
-                            <button class="button">Select</button>
-                        </div>
-                    </li>
-                    <hr class="line">
-                </ul>
                 <div class="editbuttons">
                     <button class="car-details">
-                        <a href="./index.html">
+                        <a href="./index_vehicle.html">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#info-icon"></use>
                             </svg>
-                            Choose Ride Details
+                            Choose a Vehicle
                         </a>
                     </button>
                     <button class="car-enter">
                         <a href="./index_details.html">
-                            Enter Contact Detals
+                            Booking Summary
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#info-icon"></use>
                             </svg>
