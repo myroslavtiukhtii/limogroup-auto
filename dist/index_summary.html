@@ -67,12 +67,14 @@
                     </li>
                     <li class="dotted"></li>
                     <li class="list__item">
-                        <p class="active">3</p>
+                        <p>
+                            <img src="./img/icon-check.svg" alt="Icon check">
+                        </p>
                         <h3>Enter Contact Details</h3>
                     </li>
                     <li class="dotted"></li>
                     <li class="list__item">
-                        <p>4</p>
+                        <p class="active">4</p>
                         <h3>Booking Summary</h3>
                     </li>
                 </ul>
@@ -80,8 +82,51 @@
         </section>
         <section class="vehicle">
             <div class="container">
-                <h2>Summary</h2>
+                <h2>Contact & Billing Info</h2>
                 <ul class="summary-list">
+                    <li class="summary-list__item">
+                        <h3>First name</h3>
+                        <p>Bekzod</p>
+                        <div class="line"></div>
+                    </li>
+                    <li class="summary-list__item">
+                        <h3>Last name</h3>
+                        <p>Anvarov</p>
+                        <div class="line"></div>
+                    </li>
+                    <li class="summary-list__item">
+                        <h3>E-mail address</h3>
+                        <p>anvarov8bekzod@gmail.com</p>
+                        <div class="line"></div>
+                    </li>
+                    <li class="summary-list__item">
+                        <h3>Phone number</h3>
+                        <p>+998909015455</p>
+                        <div class="line"></div>
+                    </li>
+                    <li class="summary-list__item">
+                        <div>
+                            <h3>Comments</h3>
+                            <p>Test Booking Page</p>
+                        </div>
+                    </li>
+                    <div class="line"></div>
+                    <button class="edit">Edit</button>
+                </ul>
+                <div class="payment">
+                    <h2>Payment Method</h2>
+                    <h3>Your choise</h3>
+                    <p>Stripe</p>
+                    <div class="line"></div>
+                    <button class="edit">Edit</button>
+                </div>
+                <ul class="summary-list">
+                    <li class="summary-list__item">
+                        <div id="map" style="min-height: 300px;"></div>
+                    </li>
+                    <li class="summary-list__item">
+                        <h2>Ride Details</h2>
+                    </li>
                     <li class="summary-list__item">
                         <h3>Service type</h3>
                         <p>Hourly</p>
@@ -103,23 +148,21 @@
                         <div class="line"></div>
                     </li>
                     <li class="summary-list__item">
-                        <div>
-                            <h3>Total distance</h3>
-                            <p>0 km</p>
-                        </div>
-                        <div>
-                            <h3>Total time</h3>
-                            <p>7 h 0 m</p>
-                        </div>
+                        <h3>Total distance</h3>
+                        <p>0 km</p>
                         <div class="line"></div>
                     </li>
                     <li class="summary-list__item">
-                        <div>
-                            <h3>Vehicle</h3>
-                            <p>Mersedes Benz V - Class</p>
-                        </div>
+                        <h3>Total time</h3>
+                        <p>7 h 0 m</p>
+                        <div class="line"></div>
                     </li>
+                    <button class="edit">Edit</button>
                 </ul>
+                <div class="car-summary">
+                    <button class="edit">Edit</button>
+                    <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes V-class black">
+                </div>
                 <div class="carprice">
                     <h3>Selected Vehicle</h3>
                     <p>$450.00</p>
@@ -128,29 +171,6 @@
                 <div class="totalprice">
                     <h3>Total</h3>
                     <p>$450.00</p>
-                </div>
-            </div>
-        </section>
-        <section class="form-details">
-            <div class="container">
-                <h2>CONTACT DETAILS</h2>
-                <form>
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="email" placeholder="E-mail address">
-                    <input type="number" placeholder="Phone number">
-                    <textarea name="" id="" cols="20" rows="10" placeholder="Comments ..."></textarea>
-                </form>
-                <div class="pays">
-                    <h3>Choose payment method</h3>
-                    <div class="methods">
-                        <div>
-                            <img src="./img/paypal-logo.png" alt="Paypal logo">
-                        </div>
-                        <div>
-                            <img src="./img/stripe-logo.png" alt="Stripe logo">
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -166,8 +186,8 @@
                         </a>
                     </button>
                     <button class="car-enter">
-                        <a href="./index_summary.html">
-                            Booking Summary
+                        <a href="./index.html">
+                            Confirm booking
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#info-icon"></use>
                             </svg>
@@ -255,6 +275,7 @@
             <p>Copyright © 2022 The Limousine. All Rights Reserved.</p>
         </div>
     </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="./js/script.min.js"></script>
 </body>
 </html>
