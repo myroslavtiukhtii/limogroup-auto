@@ -11,7 +11,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <img src="./img/main-logo.png" alt="Logo Limogroup" title="Logo Limogroup">
+            <a href="#">
+                <img src="./img/main-logo.png" alt="Logo Limogroup" title="Logo Limogroup">
+            </a>
             <ul class="menu-list">
                 <li class="menu-list__item">
                     <a href="#">Home</a>
@@ -25,28 +27,38 @@
                 <li class="menu-list__item">
                     <a href="#">Fleets</a>
                 </li>
-                <li class="menu-list__item">
+                <li class="menu-list__item mobile">
                     <a href="tel:+41798969696">+41 79 896 96 96</a>
                 </li>
-                <li class="menu-list__item">
+                <li class="menu-list__item button-mobile">
                     <button class="button">
                         Contact Us
                     </button>
                 </li>
             </ul>
-            <div class="language">Eng</div>
-            <div class="burger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+            <div class="menu-items">
+                <div class="language">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    Eng
+                </div>
+                <button class="button button-desktop">
+                    Contact Us
+                </button>
+                <div class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <section class="bgbooking">
             <div class="container">
-                <h2>Booking</h2>
-                <h3>Home - booking</h3>
+                <div class="titles">
+                    <h2>Booking</h2>
+                    <h3>Home - booking</h3>
+                </div>
             </div>
         </section>
         <section class="booking-list">
@@ -78,160 +90,164 @@
         </section>
         <section class="vehicle">
             <div class="container">
-                <h2>Summary</h2>
-                <ul class="summary-list">
-                    <li class="summary-list__item">
-                        <h3>Service type</h3>
-                        <p>Hourly</p>
+                <div class="left-side">
+                    <div class="fixed">
+                        <ul class="summary-list">
+                            <li class="summary-list__item">
+                                <h2>Summary</h2>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Service type</h3>
+                                <p>Hourly</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Pickup location</h3>
+                                <p>Switzerland Park, Chandragiri</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Dropp off location</h3>
+                                <p>Switzerland Park, Chandragiri</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Pick up date, time</h3>
+                                <p>17-05-2022, 8:00</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <div>
+                                    <h3>Total distance</h3>
+                                    <p>0 km</p>
+                                </div>
+                                <div>
+                                    <h3>Total time</h3>
+                                    <p>7 h 0 m</p>
+                                </div>
+                            </li>
+                        </ul>
                         <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Pickup location</h3>
-                        <p>Switzerland Park, Chandragiri</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Dropp off location</h3>
-                        <p>Switzerland Park, Chandragiri</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Pick up date, time</h3>
-                        <p>17-05-2022, 8:00</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <div>
-                            <h3>Total distance</h3>
-                            <p>0 km</p>
+                        <div class="totalprice">
+                            <h3>Total</h3>
+                            <p>$450.00</p>
                         </div>
-                        <div>
-                            <h3>Total time</h3>
-                            <p>7 h 0 m</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="line"></div>
-                <div class="totalprice">
-                    <h3>Total</h3>
-                    <p>$450.00</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="cars">
-            <div class="container">
-                <ul class="cars-list">
-                    <li class="cars-list__item">
-                        <div class="imgbg">
-                            <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes v-class">
-                        </div>
-                        <div class="about">
-                            <h2>Mercedes Benz V-Class</h2>
-                            <p>$445.00</p>
-                            <div class="info-items">
-                                <div class="persons">
-                                    <h4>7</h4>
-                                    <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
-                                </div>
-                                <div class="bags">
-                                    <h4>7</h4>
-                                    <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
-                                </div>
+                <div class="right-side">
+                    <ul class="cars-list">
+                        <li class="cars-list__item">
+                            <div class="imgbg">
+                                <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes v-class">
                             </div>
-                            <a href="#" class="info">
-                                <div class="circle">
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#info-icon"></use>
-                                    </svg>
+                            <div class="about">
+                                <h2>Mercedes Benz V-Class</h2>
+                                <p>$445.00</p>
+                                <div class="info-items">
+                                    <div class="persons">
+                                        <h4>7</h4>
+                                        <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
+                                    </div>
+                                    <div class="bags">
+                                        <h4>7</h4>
+                                        <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
+                                    </div>
                                 </div>
-                                <span>More Info</span>
-                            </a>
-                        </div>
-                        <div class="select">
-                            <button class="button">Select</button>
-                        </div>
-                    </li>
-                    <hr class="line">
-                    <li class="cars-list__item">
-                        <div class="imgbg">
-                            <img src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes S-class">
-                        </div>
-                        <div class="about">
-                            <h2> Mercedes Benz S-Class </h2>
-                            <p>$480.00</p>
-                            <div class="info-items">
-                                <div class="persons">
-                                    <h4>2</h4>
-                                    <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
-                                </div>
-                                <div class="bags">
-                                    <h4>2</h4>
-                                    <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
-                                </div>
+                                <a href="#" class="info">
+                                    <div class="circle">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#info-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <span>More Info</span>
+                                </a>
                             </div>
-                            <a href="#" class="info">
-                                <div class="circle">
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#info-icon"></use>
-                                    </svg>
-                                </div>
-                                <span>More Info</span>
-                            </a>
-                        </div>
-                        <div class="select">
-                            <button class="button">Select</button>
-                        </div>
-                    </li>
-                    <hr class="line">
-                    <li class="cars-list__item">
-                        <div class="imgbg">
-                            <img src="./img/feets-img-3-bmw-m5.png" alt="BMW M5 f90 Competition">
-                        </div>
-                        <div class="about">
-                            <h2>BMW M5 f90 Competition</h2>
-                            <p>$390.00</p>
-                            <div class="info-items">
-                                <div class="persons">
-                                    <h4>2</h4>
-                                    <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
-                                </div>
-                                <div class="bags">
-                                    <h4>2</h4>
-                                    <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
-                                </div>
+                            <div class="select">
+                                <button class="button">Select</button>
                             </div>
-                            <a href="#" class="info">
-                                <div class="circle">
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#info-icon"></use>
-                                    </svg>
+                        </li>
+                        <hr class="line">
+                        <li class="cars-list__item">
+                            <div class="imgbg">
+                                <img src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes S-class">
+                            </div>
+                            <div class="about">
+                                <h2> Mercedes Benz S-Class </h2>
+                                <p>$480.00</p>
+                                <div class="info-items">
+                                    <div class="persons">
+                                        <h4>2</h4>
+                                        <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
+                                    </div>
+                                    <div class="bags">
+                                        <h4>2</h4>
+                                        <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
+                                    </div>
                                 </div>
-                                <span>More Info</span>
+                                <a href="#" class="info">
+                                    <div class="circle">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#info-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <span>More Info</span>
+                                </a>
+                            </div>
+                            <div class="select">
+                                <button class="button">Select</button>
+                            </div>
+                        </li>
+                        <hr class="line">
+                        <li class="cars-list__item">
+                            <div class="imgbg">
+                                <img src="./img/feets-img-3-bmw-m5.png" alt="BMW M5 f90 Competition">
+                            </div>
+                            <div class="about">
+                                <h2>BMW M5 f90 Competition</h2>
+                                <p>$390.00</p>
+                                <div class="info-items">
+                                    <div class="persons">
+                                        <h4>2</h4>
+                                        <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
+                                    </div>
+                                    <div class="bags">
+                                        <h4>2</h4>
+                                        <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
+                                    </div>
+                                </div>
+                                <a href="#" class="info">
+                                    <div class="circle">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#info-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <span>More Info</span>
+                                </a>
+                            </div>
+                            <div class="select">
+                                <button class="button">Select</button>
+                            </div>
+                        </li>
+                        <hr class="line">
+                    </ul>
+                    <div class="editbuttons">
+                        <button class="car-details">
+                            <a href="./index.html">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#info-icon"></use>
+                                </svg>
+                                <span>Choose Ride Details</span>
                             </a>
-                        </div>
-                        <div class="select">
-                            <button class="button">Select</button>
-                        </div>
-                    </li>
-                    <hr class="line">
-                </ul>
-                <div class="editbuttons">
-                    <button class="car-details">
-                        <a href="./index.html">
-                            <svg class="icon">
-                                <use xlink:href="img/sprite.svg#info-icon"></use>
-                            </svg>
-                            Choose Ride Details
-                        </a>
-                    </button>
-                    <button class="car-enter">
-                        <a href="./index_details.html">
-                            Enter Contact Detals
-                            <svg class="icon">
-                                <use xlink:href="img/sprite.svg#info-icon"></use>
-                            </svg>
-                        </a>
-                    </button>
+                        </button>
+                        <button class="car-enter">
+                            <a href="./index_details.html">
+                                <span> Enter Contact Detals</span>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#info-icon"></use>
+                                </svg>
+                            </a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -274,36 +290,28 @@
                 </div>
             </div>
             <ul class="contact-list">
-                <li class="contact-list__item">
+                <li class="contact-list__item tel">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-tel"></use>
-                        </svg>
+                        <i class="fa-solid fa-phone-volume icon"></i>
                         +41 79 896 96 96
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-location"></use>
-                        </svg>
+                        <i class="fa-solid fa-location-dot icon"></i>
                         ch. des Saules 19, 1800 Vevey, 
                         Switzerland
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-email"></use>
-                        </svg>
+                        <i class="fa-regular fa-envelope icon"></i>
                         info@limogroup.ch
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-time"></use>
-                        </svg>
+                        <i class="fa-regular fa-clock icon"></i>
                         Every Day
                         Around the clock
                     </a>
