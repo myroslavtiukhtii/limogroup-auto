@@ -11,7 +11,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <img src="./img/main-logo.png" alt="Logo Limogroup" title="Logo Limogroup">
+            <a href="./index.html">
+                <img src="./img/main-logo.png" alt="Logo Limogroup" title="Logo Limogroup">
+            </a>
             <ul class="menu-list">
                 <li class="menu-list__item">
                     <a href="#">Home</a>
@@ -25,28 +27,38 @@
                 <li class="menu-list__item">
                     <a href="#">Fleets</a>
                 </li>
-                <li class="menu-list__item">
+                <li class="menu-list__item mobile">
                     <a href="tel:+41798969696">+41 79 896 96 96</a>
                 </li>
-                <li class="menu-list__item">
+                <li class="menu-list__item button-mobile">
                     <button class="button">
                         Contact Us
                     </button>
                 </li>
             </ul>
-            <div class="language">Eng</div>
-            <div class="burger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+            <div class="menu-items">
+                <div class="language">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    Eng
+                </div>
+                <button class="button button-desktop">
+                    Contact Us
+                </button>
+                <div class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <section class="bgbooking">
             <div class="container">
-                <h2>Booking</h2>
-                <h3>Home - booking</h3>
+                <div class="titles">
+                    <h2>Booking</h2>
+                    <h3>Home - booking</h3>
+                </div>
             </div>
         </section>
         <section class="booking-list">
@@ -80,99 +92,99 @@
         </section>
         <section class="vehicle">
             <div class="container">
-                <h2>Summary</h2>
-                <ul class="summary-list">
-                    <li class="summary-list__item">
-                        <h3>Service type</h3>
-                        <p>Hourly</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Pickup location</h3>
-                        <p>Switzerland Park, Chandragiri</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Dropp off location</h3>
-                        <p>Switzerland Park, Chandragiri</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Pick up date, time</h3>
-                        <p>17-05-2022, 8:00</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <div>
-                            <h3>Total distance</h3>
-                            <p>0 km</p>
+                <div class="left-side">
+                    <div class="fixed">
+                        <ul class="summary-list">
+                            <li class="summary-list__item">
+                                <h2>Summary</h2>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Service type</h3>
+                                <p>Hourly</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Pickup location</h3>
+                                <p>Switzerland Park, Chandragiri</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Dropp off location</h3>
+                                <p>Switzerland Park, Chandragiri</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Pick up date, time</h3>
+                                <p>17-05-2022, 8:00</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <div>
+                                    <h3>Total distance</h3>
+                                    <p>0 km</p>
+                                </div>
+                                <div>
+                                    <h3>Total time</h3>
+                                    <p>7 h 0 m</p>
+                                </div>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Vehicle</h3>
+                                <p>Mersedes Benz V - Class</p>
+                            </li>
+                        </ul>
+                        <div class="totalprice">
+                            <h3>Selected Vehicle</h3>
+                            <p>$450.00</p>
                         </div>
-                        <div>
-                            <h3>Total time</h3>
-                            <p>7 h 0 m</p>
-                        </div>
                         <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <div>
-                            <h3>Vehicle</h3>
-                            <p>Mersedes Benz V - Class</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="carprice">
-                    <h3>Selected Vehicle</h3>
-                    <p>$450.00</p>
-                </div>
-                <div class="line"></div>
-                <div class="totalprice">
-                    <h3>Total</h3>
-                    <p>$450.00</p>
-                </div>
-            </div>
-        </section>
-        <section class="form-details">
-            <div class="container">
-                <h2>CONTACT DETAILS</h2>
-                <form>
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="email" placeholder="E-mail address">
-                    <input type="number" placeholder="Phone number">
-                    <textarea name="" id="" cols="20" rows="10" placeholder="Comments ..."></textarea>
-                </form>
-                <div class="pays">
-                    <h3>Choose payment method</h3>
-                    <div class="methods">
-                        <div>
-                            <img src="./img/paypal-logo.png" alt="Paypal logo">
-                        </div>
-                        <div>
-                            <img src="./img/stripe-logo.png" alt="Stripe logo">
+                        <div class="totalprice">
+                            <h3>Total</h3>
+                            <p>$450.00</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="cars">
-            <div class="container">
-                <div class="editbuttons">
-                    <button class="car-details">
-                        <a href="./index_vehicle.html">
-                            <svg class="icon">
-                                <use xlink:href="img/sprite.svg#info-icon"></use>
-                            </svg>
-                            Choose a Vehicle
-                        </a>
-                    </button>
-                    <button class="car-enter">
-                        <a href="./index_summary.html">
-                            Booking Summary
-                            <svg class="icon">
-                                <use xlink:href="img/sprite.svg#info-icon"></use>
-                            </svg>
-                        </a>
-                    </button>
+                <div class="right-side">
+                    <div class="form-details">
+                        <h2>CONTACT DETAILS</h2>
+                        <form>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                            <input type="email" placeholder="E-mail address">
+                            <input type="number" placeholder="Phone number">
+                            <textarea name="" id="" cols="20" rows="10" placeholder="Comments ..."></textarea>
+                        </form>
+                        <div class="pays">
+                            <h3>Choose payment method</h3>
+                            <div class="methods">
+                                <div>
+                                    <img src="./img/paypal-logo.png" alt="Paypal logo">
+                                </div>
+                                <div>
+                                    <img src="./img/stripe-logo.png" alt="Stripe logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editbuttons">
+                            <button class="car-details">
+                                <a href="./index_vehicle.html">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#info-icon"></use>
+                                    </svg>
+                                    <span>Choose Ride Details</span>
+                                </a>
+                            </button>
+                            <button class="car-enter">
+                                <a href="./index_summary.html">
+                                    <span> Enter Contact Detals</span>
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#info-icon"></use>
+                                    </svg>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -215,36 +227,28 @@
                 </div>
             </div>
             <ul class="contact-list">
-                <li class="contact-list__item">
+                <li class="contact-list__item tel">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-tel"></use>
-                        </svg>
+                        <i class="fa-solid fa-phone-volume icon"></i>
                         +41 79 896 96 96
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-location"></use>
-                        </svg>
+                        <i class="fa-solid fa-location-dot icon"></i>
                         ch. des Saules 19, 1800 Vevey, 
                         Switzerland
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-email"></use>
-                        </svg>
+                        <i class="fa-regular fa-envelope icon"></i>
                         info@limogroup.ch
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-time"></use>
-                        </svg>
+                        <i class="fa-regular fa-clock icon"></i>
                         Every Day
                         Around the clock
                     </a>

@@ -11,7 +11,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <img src="./img/main-logo.png" alt="Logo Limogroup" title="Logo Limogroup">
+            <a href="./index.html">
+                <img src="./img/main-logo.png" alt="Logo Limogroup" title="Logo Limogroup">
+            </a>
             <ul class="menu-list">
                 <li class="menu-list__item">
                     <a href="#">Home</a>
@@ -25,17 +27,23 @@
                 <li class="menu-list__item">
                     <a href="#">Fleets</a>
                 </li>
-                <li class="menu-list__item">
+                <li class="menu-list__item mobile">
                     <a href="tel:+41798969696">+41 79 896 96 96</a>
                 </li>
-                <li class="menu-list__item">
+                <li class="menu-list__item button-mobile">
                     <button class="button">
                         Contact Us
                     </button>
                 </li>
             </ul>
-            <div>
-                <div class="language">Eng</div>
+            <div class="menu-items">
+                <div class="language">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    Eng
+                </div>
+                <button class="button button-desktop">
+                    Contact Us
+                </button>
                 <div class="burger">
                     <span class="line"></span>
                     <span class="line"></span>
@@ -47,8 +55,10 @@
     <main>
         <section class="bgbooking">
             <div class="container">
-                <h2>Booking</h2>
-                <h3>Home - booking</h3>
+                <div class="titles">
+                    <h2>Booking</h2>
+                    <h3>Home - booking</h3>
+                </div>
             </div>
         </section>
         <section class="booking-list">
@@ -84,117 +94,121 @@
         </section>
         <section class="vehicle">
             <div class="container">
-                <h2>Contact & Billing Info</h2>
-                <ul class="summary-list">
-                    <li class="summary-list__item">
-                        <h3>First name</h3>
-                        <p>Bekzod</p>
+                <div class="left-side">
+                    <ul class="summary-list">
+                        <li class="summary-list__item">
+                            <h2>Contact & Billing Info</h2>
+                        </li>
+                        <li class="summary-list__item">
+                            <h3>First name</h3>
+                            <p>Bekzod</p>
+                            <div class="line"></div>
+                        </li>
+                        <li class="summary-list__item">
+                            <h3>Last name</h3>
+                            <p>Anvarov</p>
+                            <div class="line"></div>
+                        </li>
+                        <li class="summary-list__item">
+                            <h3>E-mail address</h3>
+                            <p>anvarov8bekzod@gmail.com</p>
+                            <div class="line"></div>
+                        </li>
+                        <li class="summary-list__item">
+                            <h3>Phone number</h3>
+                            <p>+998909015455</p>
+                            <div class="line"></div>
+                        </li>
+                        <li class="summary-list__item">
+                            <div>
+                                <h3>Comments</h3>
+                                <p>Test Booking Page</p>
+                            </div>
+                        </li>
                         <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Last name</h3>
-                        <p>Anvarov</p>
+                        <button class="edit">Edit</button>
+                    </ul>
+                    <div class="payment">
+                        <h2>Payment Method</h2>
+                        <h3>Your choise</h3>
+                        <p>Stripe</p>
                         <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>E-mail address</h3>
-                        <p>anvarov8bekzod@gmail.com</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Phone number</h3>
-                        <p>+998909015455</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <div>
-                            <h3>Comments</h3>
-                            <p>Test Booking Page</p>
+                        <button class="edit">Edit</button>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="ride-details">
+                        <ul class="summary-list">
+                            <li class="summary-list__item">
+                                <div id="map" style="min-height: 300px;"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h2>Ride Details</h2>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Service type</h3>
+                                <p>Hourly</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Pickup location</h3>
+                                <p>Switzerland Park, Chandragiri</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Dropp off location</h3>
+                                <p>Switzerland Park, Chandragiri</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Pick up date, time</h3>
+                                <p>17-05-2022, 8:00</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Total distance</h3>
+                                <p>0 km</p>
+                                <div class="line"></div>
+                            </li>
+                            <li class="summary-list__item">
+                                <h3>Total time</h3>
+                                <p>7 h 0 m</p>
+                                <div class="line"></div>
+                            </li>
+                            <button class="edit">Edit</button>
+                        </ul>
+                        <div class="car-summary">
+                            <button class="edit">Edit</button>
+                            <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes V-class black">
                         </div>
-                    </li>
-                    <div class="line"></div>
-                    <button class="edit">Edit</button>
-                </ul>
-                <div class="payment">
-                    <h2>Payment Method</h2>
-                    <h3>Your choise</h3>
-                    <p>Stripe</p>
-                    <div class="line"></div>
-                    <button class="edit">Edit</button>
-                </div>
-                <ul class="summary-list">
-                    <li class="summary-list__item">
-                        <div id="map" style="min-height: 300px;"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h2>Ride Details</h2>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Service type</h3>
-                        <p>Hourly</p>
+                        <div class="carprice">
+                            <h3>Selected Vehicle</h3>
+                            <p>$450.00</p>
+                        </div>
                         <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Pickup location</h3>
-                        <p>Switzerland Park, Chandragiri</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Dropp off location</h3>
-                        <p>Switzerland Park, Chandragiri</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Pick up date, time</h3>
-                        <p>17-05-2022, 8:00</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Total distance</h3>
-                        <p>0 km</p>
-                        <div class="line"></div>
-                    </li>
-                    <li class="summary-list__item">
-                        <h3>Total time</h3>
-                        <p>7 h 0 m</p>
-                        <div class="line"></div>
-                    </li>
-                    <button class="edit">Edit</button>
-                </ul>
-                <div class="car-summary">
-                    <button class="edit">Edit</button>
-                    <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes V-class black">
-                </div>
-                <div class="carprice">
-                    <h3>Selected Vehicle</h3>
-                    <p>$450.00</p>
-                </div>
-                <div class="line"></div>
-                <div class="totalprice">
-                    <h3>Total</h3>
-                    <p>$450.00</p>
-                </div>
-            </div>
-        </section>
-        <section class="cars">
-            <div class="container">
-                <div class="editbuttons">
-                    <button class="car-details">
-                        <a href="./index_vehicle.html">
-                            <svg class="icon">
-                                <use xlink:href="img/sprite.svg#info-icon"></use>
-                            </svg>
-                            Choose a Vehicle
-                        </a>
-                    </button>
-                    <button class="car-enter">
-                        <a href="./index.html">
-                            Confirm booking
-                            <svg class="icon">
-                                <use xlink:href="img/sprite.svg#info-icon"></use>
-                            </svg>
-                        </a>
-                    </button>
+                        <div class="totalprice">
+                            <h3>Total</h3>
+                            <p>$450.00</p>
+                        </div>
+                    </div>
+                    <div class="editbuttons">
+                        <button class="car-details">
+                            <a href="./index_details.html">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#info-icon"></use>
+                                </svg>
+                                <span>Choose Ride Details</span>
+                            </a>
+                        </button>
+                        <button class="car-enter">
+                            <a href="./index.html">
+                                <span>Confirm</span>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#info-icon"></use>
+                                </svg>
+                            </a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -237,36 +251,28 @@
                 </div>
             </div>
             <ul class="contact-list">
-                <li class="contact-list__item">
+                <li class="contact-list__item tel">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-tel"></use>
-                        </svg>
+                        <i class="fa-solid fa-phone-volume icon"></i>
                         +41 79 896 96 96
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-location"></use>
-                        </svg>
+                        <i class="fa-solid fa-location-dot icon"></i>
                         ch. des Saules 19, 1800 Vevey, 
                         Switzerland
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-email"></use>
-                        </svg>
+                        <i class="fa-regular fa-envelope icon"></i>
                         info@limogroup.ch
                     </a>
                 </li>
                 <li class="contact-list__item">
                     <a href="#">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#footer-icon-time"></use>
-                        </svg>
+                        <i class="fa-regular fa-clock icon"></i>
                         Every Day
                         Around the clock
                     </a>
