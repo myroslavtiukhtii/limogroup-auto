@@ -17,16 +17,16 @@
             </a>
             <ul class="menu-list">
                 <li class="menu-list__item">
-                    <a href="#">Home</a>
+                    <a href="#" class="head-home">Home</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#about">About Us</a>
+                    <a href="#about" class="head-about">About Us</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#services">Our Services</a>
+                    <a href="#services" class="head-services">Our Services</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#fleets">Fleets</a>
+                    <a href="#fleets" class="head-fleets">Fleets</a>
                 </li>
                 <li class="menu-list__item mobile">
                     <a href="tel:+41798969696">+41 79 896 96 96</a>
@@ -39,13 +39,13 @@
             </ul>
             <div class="menu-items">
                 <div class="language">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    Eng
-                    <div class="modal-language">
-                        Uk
-                    </div>
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    <select class="select-lang">
+                        <option class="lang-eng" value="eng">Eng</option>
+                        <option class="lang-uk" value="uk">Uk</option>
+                    </select>
                 </div>
-                    <button class="button button-desktop contactbtn">
+                    <button class="button button-desktop contactbtn lang-contact">
                         Contact Us
                     </button>
                 <div class="burger">
@@ -63,23 +63,23 @@
                     <button id="closeFilterBtn">X</button>
                     <div class="inputs">
                         <div class="pickup divider">
-                            <label for="pickup">Pick Up Address:</label>
+                            <label for="pickup" class="filters-pick">Pick Up Address:</label>
                             <input type="text" id="pickup" name="pickup" value="From: address...">
                         </div>
                         <div class="dropoff divider">
-                            <label for="dropoff">Drop Off Address:</label>
+                            <label for="dropoff" class="filters-drop">Drop Off Address:</label>
                             <input type="text" id="dropoff" name="dropoff" value="From: address...">
                         </div>
                         <div class="date divider">
-                            <label for="date">Pick Up Date:</label>
+                            <label for="date" class="filters-date">Pick Up Date:</label>
                             <input type="date" id="date" name="date">
                         </div>
                         <div class="time">
-                            <label for="time">Pick Up Time:</label>
+                            <label for="time" class="filters-time">Pick Up Time:</label>
                             <input type="time" id="time" name="time">
                         </div>
                         <button class="button">
-                            <a class="link" href="./index_vehicle.html">
+                            <a class="link filters-search" href="./index_vehicle.html">
                                 Search
                             </a>
                         </button>
@@ -89,20 +89,20 @@
             <div class="contact-modal">
                 <button id="closeContcBtn">X</button>
                 <form>
-                    <label for="name">Enter your name</label>
+                    <label for="name" class="contmod-name">Enter your name</label>
                     <input type="text" id="name" required>
-                    <label for="email">Enter your email</label>
+                    <label for="email" class="contmod-email">Enter your email</label>
                     <input type="email" id="email" required>
-                    <button class="button" type="submit">Confirm</button>
+                    <button class="button contmod-confirm" type="submit">Confirm</button>
                 </form>
             </div>
             <div class="container">
                 <div class="inside">
                     <div class="titles">
-                        <h2>One global solution</h2>
+                        <h2 class="hero-title">One global solution</h2>
                         <img src="./img/hero-img.png" alt="Mersedes S class black">
-                        <p>Offering the Best Limo Service in Switzerland, Experience it Now!</p>
-                        <button class="button booking-btn">
+                        <p class="hero-parf">Offering the Best Limo Service in Switzerland, Experience it Now!</p>
+                        <button class="button booking-btn hero-btn">
                             <a href="#">Booking</a>
                         </button>
                     </div>
@@ -114,15 +114,15 @@
         </section>
         <section class="about" id="about">
             <div class="container">
-                <h2>About Us</h2>
-                <p>The best offer of world-class transportation solutions for your events</p>
+                <h2 class="about-title">About Us</h2>
+                <p class="about-parag">The best offer of world-class transportation solutions for your events</p>
                 <div class="inside">
                     <img src="./img/about-img.png" alt="Men in luxury car">
                     <ul class="text-list">
-                        <li class="text-list__item">
+                        <li class="text-list__item about-textone">
                             A Chauffeur Car Service company at your disposal for all your trips.
                         </li>
-                        <li class="text-list__item">
+                        <li class="text-list__item about-texttwo">
                             Recognized for its professionalism towards companies,
                             professionals and individuals, Limogroup is a company
                             based in Switzerland. Specialized in the tailor-made
@@ -130,13 +130,13 @@
                             for your private and business trips.
 
                         </li>
-                        <li class="text-list__item">
+                        <li class="text-list__item about-textthree">
                             We have a fleet of prestigious and modern vehicles
                             for a comfortable and secure accompaniment in the destinations
                             of your choice. Our mission is to provide you with an excellent
                             service as well as a personalized welcome for your short and long journeys.
                         </li>
-                        <li class="text-list__item">
+                        <li class="text-list__item about-textfour">
                             Thanks to our experience, we guarantee a high-end accompaniment
                             to meet all your needs: rental of a chauffeured car, transfers,
                             group transfers, private events, weddings, conferences and
@@ -149,17 +149,17 @@
         </section>
         <section class="services" id="services">
             <div class="container">
-                <h2>Our Services</h2>
-                <p>Worldwide fast & easy access for all occasions.</p>
+                <h2 class="services-title">Our Services</h2>
+                <p class="services-parag">Worldwide fast & easy access for all occasions.</p>
                 <ul class="services-list reveal fade-bottom">
                     <li class="services-list__item">
                         <img src="./img/services-img-1.png" alt="People near a car and plane">
-                        <h3>Airport transfers</h3>
-                        <p>
+                        <h3 class="serv-item--titleone">Airport transfers</h3>
+                        <p class="serv-item--paragone">
                             With additional wait time and flight tracking in case of delays,
                             our service is optimized to make every airport transfer a breeze.
                         </p>
-                        <button class="button booking-btn">
+                        <button class="button booking-btn serv-item--btn">
                             Booking
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#blacck-arrow-toright"></use>
@@ -168,12 +168,12 @@
                     </li>
                     <li class="services-list__item">
                         <img src="./img/services-img-2.png" alt="A man in the car">
-                        <h3>Intercity Rides</h3>
-                        <p>
+                        <h3 class="serv-item--titletwo">Intercity Rides</h3>
+                        <p class="serv-item--paragtwo">
                             Your stress-free solution for traveling between cities,
                             with chauffeurs across the globe.
                         </p>
-                        <button class="button booking-btn">
+                        <button class="button booking-btn serv-item--btn">
                             Booking
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#blacck-arrow-toright"></use>
@@ -182,12 +182,12 @@
                     </li>
                     <li class="services-list__item">
                         <img src="./img/services-img-3.png" alt="The man gets into the car">
-                        <h3>Business Meeting</h3>
-                        <p>Concentrate on your meeting with your partners,
+                        <h3 class="serv-item--titlethree">Business Meeting</h3>
+                        <p class="serv-item--paragthree">Concentrate on your meeting with your partners,
                             forget about the road and the car,
                             which will distract your thoughts.
                         </p>
-                        <button class="button booking-btn">
+                        <button class="button booking-btn serv-item--btn">
                             Booking
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#blacck-arrow-toright"></use>
@@ -196,12 +196,12 @@
                     </li>
                     <li class="services-list__item">
                         <img src="./img/services-img-4.png" alt="Wedding near the black car">
-                        <h3>Wedding Parties</h3>
-                        <p>Our friendly, and attentive service
+                        <h3 class="serv-item--titlefour">Wedding Parties</h3>
+                        <p class="serv-item--paragfour">Our friendly, and attentive service
                             combined with thorough attention to
                             detail ensure you can truly relax and enjoy your special day.
                         </p>
-                        <button class="button booking-btn">
+                        <button class="button booking-btn serv-item--btn">
                             Booking
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#blacck-arrow-toright"></use>
@@ -213,8 +213,8 @@
         </section>
         <section class="fleets" id="fleets">
             <div class="container">
-                <h2>Our Fleets</h2>
-                <p>Choose according to your desire and circumstances</p>
+                <h2 class="fleets-title">Our Fleets</h2>
+                <p class="fleets-parag">Choose according to your desire and circumstances</p>
                 <div class="main-auto">
                     <div class="titles">
                         <h2>Mersedes Benz V Class</h2>
@@ -268,8 +268,8 @@
         </section>
         <section class="advantages">
             <div class="container">
-                <h2>Why Choose limogroup?</h2>
-                <p>Our main advantages are to be chosen by us</p>
+                <h2 class="advantages-title">Why Choose limogroup?</h2>
+                <p class="advantages-parag">Our main advantages are to be chosen by us</p>
                 <ul class="advantages-list">
                     <li class="advantages-list__item">
                         <div class="picture">
