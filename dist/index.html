@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="contact-modal">
-                <button id="closeContcBtn">X</button>
+                <button class="closeContcBtn">X</button>
                 <form>
                     <label for="name" class="contmod-name">Enter your name</label>
                     <input type="text" id="name" required>
@@ -325,15 +325,15 @@
         <section class="contact" id="contact">
             <div class="thank-modal">
                 <button id="closeThankModal">X</button>
-                <h2>
+                <h2 class="contactmodal-title">
                     Thank you
                 </h2>
                 <span id="user"></span>
-                <p>we will call you soon</p>
+                <p class="contactmodal-parag">we will call you soon</p>
             </div>
             <div class="container">
-                <h2>Contact us</h2>
-                <p>Perhaps you have any questions? Please write to us</p>
+                <h2 class="contact-title">Contact us</h2>
+                <p class="contact-parag">Perhaps you have any questions? Please write to us</p>
                 <div class="inside">
                     <img src="./img/contact-img.png" alt="The man near a car">
                     <div class="form">
@@ -344,10 +344,10 @@
                             <textarea name="message" id="contactMessage" cols="10" rows="10" placeholder="Message*" required></textarea>
                         <div class="checkbox">
                             <input type="checkbox" name="terms" id="checkboxterms" required>
-                            <label for="terms">I agree to the Terms of Service and Privacy Policy.</label>                                                  
+                            <label for="terms" class="contactform-privacy">I agree to the Terms of Service and Privacy Policy.</label>                                                  
                         </div>
                         </form>
-                        <button class="button" id="thanksbtn">
+                        <button class="button contform-btn" id="thanksbtn">
                             Submit Now
                         </button>
                     </div>
@@ -359,30 +359,30 @@
         <div class="container">
             <div class="subscribe-modal">
                 <button id="closeSubscribeModal">X</button>
-                <h2>
+                <h2 class="footermodaltitle">
                     Thank you for subscription!
                 </h2>
             </div>
             <div class="head">
                 <div class="subscribe">
-                    <h2>Subscribe our newsletter</h2>
-                    <p>Want to know about our offers first?</p>
+                    <h2 class="footertitle">Subscribe our newsletter</h2>
+                    <p class="footerparag">Want to know about our offers first?</p>
                     <div class="inputs">
                         <input type="email" id="subscribed-email" placeholder="example@gmail.com">
-                        <button class="button" id="btn-subscribe">Subscribe</button>
+                        <button class="button footersubsbtn" id="btn-subscribe">Subscribe</button>
                     </div>
                 </div>
                 <div class="legasy">
                     <img src="./img/footer-logo.png" alt="Limogroup logo company">
                     <ul class="policy-list">
                         <li class="policy-list__item">
-                            <a href="#">Legal</a>
+                            <a href="#" class="footerlegal">Legal</a>
                         </li>
                         <li class="policy-list__item">
-                            <a href="#">Privacy Policy</a>
+                            <a href="#" class="footerprivacy">Privacy Policy</a>
                         </li>
                         <li class="policy-list__item">
-                            <a href="#">Terms of Use</a>
+                            <a href="#" class="footerterms">Terms of Use</a>
                         </li>
                     </ul>
                 </div>

@@ -17,16 +17,16 @@
             </a>
             <ul class="menu-list">
                 <li class="menu-list__item">
-                    <a href="#">Home</a>
+                    <a href="#" class="head-home">Home</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#">About Us</a>
+                    <a href="#about" class="head-about">About Us</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#">Our Services</a>
+                    <a href="#services" class="head-services">Our Services</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#">Fleets</a>
+                    <a href="#fleets" class="head-fleets">Fleets</a>
                 </li>
                 <li class="menu-list__item mobile">
                     <a href="tel:+41798969696">+41 79 896 96 96</a>
@@ -39,12 +39,15 @@
             </ul>
             <div class="menu-items">
                 <div class="language">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    Eng
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    <select class="select-lang">
+                        <option class="lang-eng" value="eng">Eng</option>
+                        <option class="lang-uk" value="uk">Uk</option>
+                    </select>
                 </div>
-                <button class="button button-desktop">
-                    Contact Us
-                </button>
+                    <button class="button button-desktop contactbtn lang-contact">
+                        Contact Us
+                    </button>
                 <div class="burger">
                     <span class="line"></span>
                     <span class="line"></span>
@@ -206,26 +209,32 @@
     </main>
     <footer>
         <div class="container">
+            <div class="subscribe-modal">
+                <button id="closeSubscribeModal">X</button>
+                <h2 class="footermodaltitle">
+                    Thank you for subscription!
+                </h2>
+            </div>
             <div class="head">
                 <div class="subscribe">
-                    <h2>Subscribe our newsletter</h2>
-                    <p>Want to know about our offers first?</p>
+                    <h2 class="footertitle">Subscribe our newsletter</h2>
+                    <p class="footerparag">Want to know about our offers first?</p>
                     <div class="inputs">
-                        <input type="email" value="example@gmail.com">
-                        <button class="button">Subscribe</button>
+                        <input type="email" id="subscribed-email" placeholder="example@gmail.com">
+                        <button class="button footersubsbtn" id="btn-subscribe">Subscribe</button>
                     </div>
                 </div>
                 <div class="legasy">
                     <img src="./img/footer-logo.png" alt="Limogroup logo company">
                     <ul class="policy-list">
                         <li class="policy-list__item">
-                            <a href="#">Legal</a>
+                            <a href="#" class="footerlegal">Legal</a>
                         </li>
                         <li class="policy-list__item">
-                            <a href="#">Privacy Policy</a>
+                            <a href="#" class="footerprivacy">Privacy Policy</a>
                         </li>
                         <li class="policy-list__item">
-                            <a href="#">Terms of Use</a>
+                            <a href="#" class="footerterms">Terms of Use</a>
                         </li>
                     </ul>
                 </div>
