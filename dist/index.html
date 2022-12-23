@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>Limogroup</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -88,7 +89,7 @@
             </div>
             <div class="contact-modal">
                 <button class="closeContcBtn">X</button>
-                <form>
+                <form class="formcontact">
                     <label for="name" class="contmod-name">Enter your name</label>
                     <input type="text" id="name" required>
                     <label for="email" class="contmod-email">Enter your email</label>
@@ -227,32 +228,42 @@
                     <img src="./img/feets-img-1-mersedes-v-class.png" alt="Mersedes V-class black">
                     <button class="button booking-btn">Get Limousine</button>
                 </div>
-                <ul class="slider-list">
-                    <li class="slider-list__item">
-                        <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes Benz V-Class">
-                        <h3>Mersedes Benz V-Class</h3>
-                    </li>
-                    <li class="slider-list__item">
-                        <img src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes Benz S-Class">
-                        <h3>Mersedes Benz S-Class</h3>
-                    </li>
-                    <li class="slider-list__item">
-                        <img src="./img/feets-img-3-bmw-m5.png" alt="BMW  M5 F90 Competition">
-                        <h3>BMW M5 F90 Competition</h3>
-                    </li>
-                    <li class="slider-list__item">
-                        <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes Benz V-Class">
-                        <h3>Mersedes Benz V-Class</h3>
-                    </li>
-                    <li class="slider-list__item">
-                        <img src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes Benz S-Class">
-                        <h3>Mersedes Benz S-Class</h3>
-                    </li>
-                    <li class="slider-list__item">
-                        <img src="./img/feets-img-3-bmw-m5.png" alt="BMW  M5 F90 Competition">
-                        <h3>BMW M5 F90 Competition</h3>
-                    </li>
-                </ul>
+                <div class="swiper">
+                    <div class="slider-list my-slider">
+                        <div class="slider-list__item">
+                            <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes Benz V-Class">
+                            <h3>Mersedes Benz V-Class</h3>
+                        </div>
+                        <div class="slider-list__item">
+                            <img src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes Benz S-Class">
+                            <h3>Mersedes Benz S-Class</h3>
+                        </div>
+                        <div class="slider-list__item">
+                            <img src="./img/feets-img-3-bmw-m5.png" alt="BMW  M5 F90 Competition">
+                            <h3>BMW M5 F90 Competition</h3>
+                        </div>
+                        <div class="slider-list__item">
+                            <img src="./img/feets-img-aston-martin.png" alt="Aston Martin">
+                            <h3>Aston Martin Rapid</h3>
+                        </div>
+                        <div class="slider-list__item">
+                            <img src="./img/feets-img-bentley-continental.png" alt="Bentley Continental">
+                            <h3>Bentley Continental</h3>
+                        </div>
+                        <div class="slider-list__item">
+                            <img src="./img/feets-img-lexus-lx570.png" alt="Lexus LX 570">
+                            <h3>Lexus LX 570</h3>
+                        </div>
+                    </div>
+                    <ul class="control" id="custom-control">
+                        <li class="prev">
+                          <i class="fas fa-angle-left fa-2x"></i>
+                        </li>
+                        <li class="next">
+                          <i class="fas fa-angle-right fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="clients">
@@ -420,6 +431,7 @@
             <p>Copyright © 2022 The Limousine. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/script.min.js"></script>
 </body>
 </html>
