@@ -58,6 +58,16 @@
     </header>
     <main>
         <section class="bgbooking">
+            <div class="contact-modal">
+                <button class="closeContcBtn">X</button>
+                <form class="formcontact">
+                    <label for="name" class="contmod-name">Enter your name</label>
+                    <input type="text" id="name" required>
+                    <label for="email" class="contmod-email">Enter your email</label>
+                    <input type="email" id="email" required>
+                    <button class="button contmod-confirm" type="submit">Confirm</button>
+                </form>
+            </div>
             <div class="container">
                 <div class="titles">
                     <h2>Booking</h2>
@@ -110,7 +120,7 @@
                             </li>
                             <li class="summary-list__item">
                                 <h3>Pickup location</h3>
-                                <p>Switzerland Park, Chandragiri</p>
+                                <p class="pickup-vehicle">Switzerland Park, Chandragiri</p>
                                 <div class="line"></div>
                             </li>
                             <li class="summary-list__item">
@@ -238,42 +248,11 @@
                         <hr class="line">
                         <li class="cars-list__item">
                             <div class="imgbg">
-                                <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes v-class">
+                                <img src="./img/feets-img-aston-martin.png" alt="Aston Martin">
                             </div>
                             <div class="about">
-                                <h2>Mercedes Benz V-Class</h2>
-                                <p>$445.00</p>
-                                <div class="info-items">
-                                    <div class="persons">
-                                        <h4>7</h4>
-                                        <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
-                                    </div>
-                                    <div class="bags">
-                                        <h4>7</h4>
-                                        <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
-                                    </div>
-                                </div>
-                                <a href="#" class="info">
-                                    <div class="circle">
-                                        <svg class="icon">
-                                            <use xlink:href="img/sprite.svg#info-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <span>More Info</span>
-                                </a>
-                            </div>
-                            <div class="select">
-                                <button class="button">Select</button>
-                            </div>
-                        </li>
-                        <hr class="line">
-                        <li class="cars-list__item">
-                            <div class="imgbg">
-                                <img src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes S-class">
-                            </div>
-                            <div class="about">
-                                <h2> Mercedes Benz S-Class </h2>
-                                <p>$480.00</p>
+                                <h2>Aston Martin Rapid</h2>
+                                <p>$645.00</p>
                                 <div class="info-items">
                                     <div class="persons">
                                         <h4>2</h4>
@@ -300,18 +279,49 @@
                         <hr class="line">
                         <li class="cars-list__item">
                             <div class="imgbg">
-                                <img src="./img/feets-img-3-bmw-m5.png" alt="BMW M5 f90 Competition">
+                                <img src="./img/feets-img-bentley-continental.png" alt="Bentley Continental">
                             </div>
                             <div class="about">
-                                <h2>BMW M5 f90 Competition</h2>
-                                <p>$390.00</p>
+                                <h2>Bentley Continental</h2>
+                                <p>$980.00</p>
                                 <div class="info-items">
                                     <div class="persons">
                                         <h4>2</h4>
                                         <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
                                     </div>
                                     <div class="bags">
-                                        <h4>2</h4>
+                                        <h4>1</h4>
+                                        <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
+                                    </div>
+                                </div>
+                                <a href="#" class="info">
+                                    <div class="circle">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#info-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <span>More Info</span>
+                                </a>
+                            </div>
+                            <div class="select">
+                                <button class="button">Select</button>
+                            </div>
+                        </li>
+                        <hr class="line">
+                        <li class="cars-list__item">
+                            <div class="imgbg">
+                                <img src="./img/feets-img-lexus-lx570.png" alt="Lexus LX 570">
+                            </div>
+                            <div class="about">
+                                <h2>Lexus LX 570</h2>
+                                <p>$690.00</p>
+                                <div class="info-items">
+                                    <div class="persons">
+                                        <h4>6</h4>
+                                        <img src="./img/persons-icon.svg" alt="Icon maximum persons in car">
+                                    </div>
+                                    <div class="bags">
+                                        <h4>5</h4>
                                         <img src="./img/bags-icon.svg" alt="Icon maximum bags in car">
                                     </div>
                                 </div>
