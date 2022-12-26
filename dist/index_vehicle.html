@@ -32,7 +32,7 @@
                     <a href="tel:+41798969696">+41 79 896 96 96</a>
                 </li>
                 <li class="menu-list__item button-mobile">
-                    <button class="button">
+                    <button class="button contactbtn">
                         Contact Us
                     </button>
                 </li>
@@ -155,7 +155,7 @@
                     <ul class="cars-list">
                         <li class="cars-list__item">
                             <div class="imgbg">
-                                <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes v-class">
+                                <img class="carImg" src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes v-class">
                             </div>
                             <div class="about">
                                 <h2 class="carname">Mercedes Benz V-Class</h2>
@@ -194,7 +194,7 @@
                         <hr class="line">
                         <li class="cars-list__item">
                             <div class="imgbg">
-                                <img src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes S-class">
+                                <img class="carImg" src="./img/feets-img-3-mersedes-s-class.png" alt="Mersedes S-class">
                             </div>
                             <div class="about">
                                 <h2 class="carname">Mercedes Benz S-Class</h2>
@@ -231,7 +231,7 @@
                         <hr class="line">
                         <li class="cars-list__item">
                             <div class="imgbg">
-                                <img src="./img/feets-img-3-bmw-m5.png" alt="BMW M5 f90 Competition">
+                                <img class="carImg" src="./img/feets-img-3-bmw-m5.png" alt="BMW M5 f90 Competition">
                             </div>
                             <div class="about">
                                 <h2 class="carname">BMW M5 f90 Competition</h2>
@@ -268,7 +268,7 @@
                         <hr class="line">
                         <li class="cars-list__item">
                             <div class="imgbg">
-                                <img src="./img/feets-img-aston-martin.png" alt="Aston Martin">
+                                <img class="carImg" src="./img/feets-img-aston-martin.png" alt="Aston Martin">
                             </div>
                             <div class="about">
                                 <h2 class="carname">Aston Martin Rapid</h2>
@@ -305,7 +305,7 @@
                         <hr class="line">
                         <li class="cars-list__item">
                             <div class="imgbg">
-                                <img src="./img/feets-img-bentley-continental.png" alt="Bentley Continental">
+                                <img class="carImg" src="./img/feets-img-bentley-continental.png" alt="Bentley Continental">
                             </div>
                             <div class="about">
                                 <h2 class="carname">Bentley Continental</h2>
@@ -342,7 +342,7 @@
                         <hr class="line">
                         <li class="cars-list__item">
                             <div class="imgbg">
-                                <img src="./img/feets-img-lexus-lx570.png" alt="Lexus LX 570">
+                                <img class="carImg" src="./img/feets-img-lexus-lx570.png" alt="Lexus LX 570">
                             </div>
                             <div class="about">
                                 <h2 class="carname">Lexus LX 570</h2>
@@ -379,22 +379,18 @@
                         <hr class="line">
                     </ul>
                     <div class="editbuttons">
-                        <button class="car-details">
-                            <a href="./index.html">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#info-icon"></use>
-                                </svg>
-                                <span>Choose Ride Details</span>
-                            </a>
-                        </button>
-                        <button class="car-enter">
-                            <a href="./index_details.html">
-                                <span> Enter Contact Detals</span>
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#info-icon"></use>
-                                </svg>
-                            </a>
-                        </button>
+                        <a class="car-details" href="./index.html">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#info-icon"></use>
+                            </svg>
+                            <span>Choose Ride Details</span>
+                        </a>
+                        <a class="car-enter btn-vehicle" href="./index_details.html">
+                            <span>Enter Contact Details</span>
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#info-icon"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>

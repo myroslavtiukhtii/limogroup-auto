@@ -32,7 +32,7 @@
                     <a href="tel:+41798969696">+41 79 896 96 96</a>
                 </li>
                 <li class="menu-list__item button-mobile">
-                    <button class="button">
+                    <button class="button contactbtn">
                         Contact Us
                     </button>
                 </li>
@@ -58,6 +58,16 @@
     </header>
     <main>
         <section class="bgbooking">
+            <div class="contact-modal">
+                <button class="closeContcBtn">X</button>
+                <form class="formcontact">
+                    <label for="name" class="contmod-name">Enter your name</label>
+                    <input type="text" id="name" required>
+                    <label for="email" class="contmod-email">Enter your email</label>
+                    <input type="email" id="email" required>
+                    <button class="button contmod-confirm" type="submit">Confirm</button>
+                </form>
+            </div>
             <div class="container">
                 <div class="titles">
                     <h2>Booking</h2>
@@ -108,39 +118,43 @@
                         </li>
                         <li class="summary-list__item">
                             <h3>First name</h3>
-                            <p>Bekzod</p>
+                            <p class="firstNameSummary">Bekzod</p>
                             <div class="line"></div>
                         </li>
                         <li class="summary-list__item">
                             <h3>Last name</h3>
-                            <p>Anvarov</p>
+                            <p class="lastNameSummary">Anvarov</p>
                             <div class="line"></div>
                         </li>
                         <li class="summary-list__item">
                             <h3>E-mail address</h3>
-                            <p>anvarov8bekzod@gmail.com</p>
+                            <p class="emailSummary">anvarov8bekzod@gmail.com</p>
                             <div class="line"></div>
                         </li>
                         <li class="summary-list__item">
                             <h3>Phone number</h3>
-                            <p>+998909015455</p>
+                            <p class="telSummary">+998909015455</p>
                             <div class="line"></div>
                         </li>
                         <li class="summary-list__item">
                             <div>
                                 <h3>Comments</h3>
-                                <p>Test Booking Page</p>
+                                <p class="commentsSummary">Test Booking Page</p>
                             </div>
                         </li>
                         <div class="line"></div>
-                        <button class="edit">Edit</button>
+                        <a class="edit" href="./index_details.html">
+                            Edit
+                        </a>
                     </ul>
                     <div class="payment">
                         <h2>Payment Method</h2>
                         <h3>Your choise</h3>
-                        <p>Stripe</p>
+                        <p class="payMethodsSum">Stripe</p>
                         <div class="line"></div>
-                        <button class="edit">Edit</button>
+                        <a class="edit" href="./index_details.html">
+                            Edit
+                        </a>
                     </div>
                 </div>
                 <div class="right-side">
@@ -159,17 +173,17 @@
                             </li>
                             <li class="summary-list__item">
                                 <h3>Pickup location</h3>
-                                <p>Switzerland Park, Chandragiri</p>
+                                <p class="pickUpSum">Switzerland Park, Chandragiri</p>
                                 <div class="line"></div>
                             </li>
                             <li class="summary-list__item">
                                 <h3>Dropp off location</h3>
-                                <p>Switzerland Park, Chandragiri</p>
+                                <p class="dropOffSum">Switzerland Park, Chandragiri</p>
                                 <div class="line"></div>
                             </li>
                             <li class="summary-list__item">
                                 <h3>Pick up date, time</h3>
-                                <p>17-05-2022, 8:00</p>
+                                <p class="dateTimeSum">17-05-2022, 8:00</p>
                                 <div class="line"></div>
                             </li>
                             <li class="summary-list__item">
@@ -182,11 +196,15 @@
                                 <p>7 h 0 m</p>
                                 <div class="line"></div>
                             </li>
-                            <button class="edit">Edit</button>
+                            <a class="edit" href="./index.html">
+                                Edit
+                            </a>
                         </ul>
                         <div class="car-summary">
-                            <button class="edit">Edit</button>
-                            <img src="./img/feets-img-2-mersedes-v-class.png" alt="Mersedes V-class black">
+                            <a class="edit" href="./index_vehicle.html">
+                                Edit
+                            </a>
+                            <img class="carImgSum" src="" alt="Car choosed">
                         </div>
                         <div class="carprice">
                             <h3>Selected Vehicle</h3>
@@ -199,22 +217,18 @@
                         </div>
                     </div>
                     <div class="editbuttons">
-                        <button class="car-details">
-                            <a href="./index_details.html">
+                            <a class="car-details" href="./index_details.html">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#info-icon"></use>
                                 </svg>
-                                <span>Choose Ride Details</span>
+                                <span>Enter Contact Details</span>
                             </a>
-                        </button>
-                        <button class="car-enter">
-                            <a href="./index.html">
+                            <a class="car-enter" href="./index.html">
                                 <span>Confirm</span>
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#info-icon"></use>
                                 </svg>
                             </a>
-                        </button>
                     </div>
                 </div>
             </div>

@@ -32,7 +32,7 @@
                     <a href="tel:+41798969696">+41 79 896 96 96</a>
                 </li>
                 <li class="menu-list__item button-mobile">
-                    <button class="button">
+                    <button class="button contactbtn">
                         Contact Us
                     </button>
                 </li>
@@ -58,6 +58,16 @@
     </header>
     <main>
         <section class="bgbooking">
+            <div class="contact-modal">
+                <button class="closeContcBtn">X</button>
+                <form class="formcontact">
+                    <label for="name" class="contmod-name">Enter your name</label>
+                    <input type="text" id="name" required>
+                    <label for="email" class="contmod-email">Enter your email</label>
+                    <input type="email" id="email" required>
+                    <button class="button contmod-confirm" type="submit">Confirm</button>
+                </form>
+            </div>
             <div class="container">
                 <div class="titles">
                     <h2>Booking</h2>
@@ -156,40 +166,38 @@
                     <div class="form-details">
                         <h2>CONTACT DETAILS</h2>
                         <form>
-                            <input type="text" placeholder="First Name*" required>
-                            <input type="text" placeholder="Last Name*">
-                            <input type="email" placeholder="E-mail address">
-                            <input type="number" placeholder="Phone number*" required>
-                            <textarea name="" id="" cols="20" rows="10" placeholder="Comments ..."></textarea>
+                            <input class="firstnamedetails" type="text" placeholder="First Name*" required>
+                            <input class="lastnamedetails" type="text" placeholder="Last Name*">
+                            <input class="emaildetails" type="email" placeholder="E-mail address">
+                            <input class="numberdetails" type="number" placeholder="Phone number*" required>
+                            <textarea class="commentdetails" name="" id="" cols="20" rows="10" placeholder="Comments ..."></textarea>
                         </form>
                         <div class="pays">
                             <h3>Choose payment method</h3>
                             <div class="methods">
-                                <div>
+                                <div class="pay">
+                                    <span class="value visually-hidden">Paypal</span>
                                     <img src="./img/paypal-logo.png" alt="Paypal logo">
                                 </div>
-                                <div>
+                                <div class="pay">
+                                    <span class="value visually-hidden">Stripe</span>
                                     <img src="./img/stripe-logo.png" alt="Stripe logo">
                                 </div>
                             </div>
                         </div>
                         <div class="editbuttons">
-                            <button class="car-details">
-                                <a href="./index_vehicle.html">
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#info-icon"></use>
-                                    </svg>
-                                    <span>Choose Ride Details</span>
-                                </a>
-                            </button>
-                            <button class="car-enter">
-                                <a href="./index_summary.html">
-                                    <span> Enter Contact Detals</span>
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#info-icon"></use>
-                                    </svg>
-                                </a>
-                            </button>
+                            <a class="car-details" href="./index_vehicle.html">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#info-icon"></use>
+                                </svg>
+                                <span>Choose a vehicle</span>
+                            </a>
+                            <a class="car-enter btnSaveDetails" href="./index_summary.html">
+                                <span>Booking Summary</span>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#info-icon"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
